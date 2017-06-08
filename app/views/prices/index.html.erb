@@ -1,0 +1,18 @@
+<h2>Bem-vindo ao Quilo!</h2>
+
+<table>
+    <tr>
+        <th>Restaurante</th>
+        <th>Preço</th>
+    </tr>
+    
+    <% @prices.find_each do |price| %>
+    <tr>
+        <td><%= price.id =%></td>
+        <td><%= price.price =%></td>
+    </tr>
+    <% end %>
+</table>
+
+<img src="/assets/ie.gif" />
+<h6>(c) 2017 Daniel Ferreira </h6>
